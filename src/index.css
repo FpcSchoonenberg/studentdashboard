@@ -1,0 +1,271 @@
+/* __________________________________________________________________________________________________mobile first approach________ */
+/* __________________________________________________________________________________________________css-reset______________________ */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* __________________________________________________________________________________________________css-defenitions________________ */
+body {
+  font-family: monospace;
+  font-size: 1em;
+  margin: auto;
+  width: 80vw;
+}
+
+.noselectedstudent, .icon_rocket {
+  color: #cd296a;
+}
+
+.studentlist, .student, .button_charttype,
+.studentprofile_container h4, .help_container h4, .help_container h4 {
+  background-color: #16829a;
+}
+
+a, .student, .studentprofile_container h4, .help_container h4 {
+  color: white;
+}
+
+.help_container, .studentprofile_container {
+  background-color: #1a3444;
+}
+
+.footer, .icon_footer {
+  color: gray;
+}
+
+.app {
+  background-color: #1c2431;
+  width: 80vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #1dafbc;
+  margin-top: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.image_react {
+  width: 75px;
+  margin-left: auto;
+}
+
+.studentlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  border: 1px solid #16829a;
+}
+
+.student {
+  font-size: 0.65em;
+  padding: 0px;
+  border: 1px solid #16829a;
+  text-transform: uppercase;
+}
+
+.student :hover {
+  color: #1a3444;
+}
+
+.buttons {
+  font-size: 0.8em;
+  border-radius: 20px;
+  padding: 0px 15px;
+  margin: 20px 10px;
+  color: #212222;
+  border: 1px solid white;
+  font-weight: bolder;
+}
+
+.buttons_chartfilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+}
+
+.button_difficulty {
+  background-color: #4d4898;
+}
+
+.button_joy {
+  background-color: #1cb0bc;
+}
+
+.studentprofile_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.9em;
+  padding: 0px 10px 0px 10px;
+  line-height: 18px;
+}
+
+.personal_information {
+  border: none;
+}
+
+.studentprofile_container h4 {
+  margin: 15px 0px 15px 0px;
+  padding: 2px;
+}
+
+.studentprofile_container ul {
+  list-style-type: none;
+}
+
+.studentinfo_photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.studentprofile_image_container {
+  padding-right: 2px;
+}
+
+.studentprofile_image {
+  height: 100px;
+  border: 1px solid white;
+}
+
+.info_additional {
+  margin-bottom: 15px;
+}
+
+.help_container {
+  padding: 0px 10px 0px 10px;
+  line-height: 18px;
+}
+
+.help_container h4 {
+  padding: 2px;
+  margin-bottom: 15px;
+}
+
+.icon_rocket {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.footer {
+  font-family: monospace;
+  font-size: 1em;
+  text-align: center;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.icon_footer {
+  margin: 2px 7px 1px 7px;
+}
+
+.noselectedstudent {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* __________________________________________________________________________________________________media-query______________________ */
+@media screen and (min-width: 769px) {
+  .student {
+    font-size: 0.9em;
+  }
+
+  .studentprofile_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    font-size: 1.1em;
+  }
+
+  .studentinfo_photo {
+    width: 40vw;
+    margin-right: 5px;
+  }
+
+  .help_container {
+    font-size: 1.1em;
+  }
+
+  .header {
+    font-size: 1.3em;
+  }
+
+  .image_react {
+    width: 100px;
+  }
+}
+/* __________________________________________________________________________________________________media-query______________________ */
+@media screen and (min-width: 1025px) {
+  .student {
+    font-size: 1em;
+  }
+
+  .buttons {
+    font-size: 1.1em;
+  }
+
+  .studentinfo_photo, .info_additional, .help_container, h4, .noselectedstudent {
+    word-spacing: 5px;
+  }
+
+  .studentprofile_image {
+    width: 125px;
+  }
+
+  .header {
+    font-size: 1.5em;
+  }
+
+  h4, h3 {
+    font-size: larger;
+    font-weight: lighter;
+  }
+}
+/*# sourceMappingURL=index.css.map */
