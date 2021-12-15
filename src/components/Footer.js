@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer">
         <h5>fpcschoonenberg</h5>
         <a
-          href="https://github.com/FpcSchoonenberg"
+          href="https://github.com/FpcSchoonenberg/studentdashboard/"
           target="_blank"
           rel="noopener noreferrer"
         >
